@@ -3,7 +3,7 @@ import { GitIngest } from "git-analysts";
 import express from "express";
 import cors from "cors";
 
-const app = express();
+const app: any = express();
 const port = process.env.PORT || 3789;
 app.use(cors());
 
