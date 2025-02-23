@@ -40,6 +40,7 @@ app.post("/analyze", async (req: any, res: any) => {
   } catch (error) {
     res.status(500).json({
       success: false,
+      error: error,
     });
   }
 });
